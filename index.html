@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ku" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>بۆ تۆ...</title>
+
+<link rel="stylesheet" href="style.css">
+
+<div id="card-letter" class="card active">
+    <div class="icon">💌</div>
+    <h1>نامەیەکی تایبەت</h1>
+    <p>کرتە لە دوگمەکە بکە بۆ کردنەوەی نامەکە</p>
+    <button class="btn btn-open" onclick="openLetter()">
+        کردنەوەی نامە
+    </button>
+</div>
+
+<div id="card-question" class="card">
+    <h1>ببمە شەهیدی نیشتیمان؟ 🤍</h1>
+    <p>باش بیر بکەرەوە 😄</p>
+    <div class="btn-container">
+        <button class="btn btn-yes" onclick="sayYes()">بەڵێ</button>
+        <button class="btn btn-no" id="btnNo">نەخێر</button>
+    </div>
+</div>
+
+<div id="card-success" class="card">
+    <div class="icon">❤️</div>
+    <h1>باشترین بڕیار بوو!</h1>
+    <p>منیش حەز دەکەم ببمێ 🤍</p>
+</div>
+<script src="script.js"></script>
+</body>

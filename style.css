@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background:#050505;
+    color:white;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:rgba(20,20,25,.7);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    padding:40px;
+    width:90%;
+    max-width:420px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+    display:none;
+}
+
+.card.active{
+    display:block;
+}
+
+.icon{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+p{
+    color:#bbb;
+    margin-bottom:25px;
+}
+
+.btn-container{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+.btn{
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn-open,
+.btn-yes{
+    background:#ff2a7a;
+    color:white;
+}
+
+.btn-no{
+    background:#222;
+    color:white;
+}
+
+.confetti{
+    position:fixed;
+    font-size:24px;
+    pointer-events:none;
+    animation:fall 4s linear forwards;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-100px);
+        opacity:1;
+    }
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
